@@ -1,0 +1,36 @@
+﻿@model UsuarioModel
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="card">
+  <div class="card-header">
+    Guardar
+  </div>
+  <div class="card-body">
+    
+
+      <form asp-action"Add" asp-controller = "Usuario" method= "post">
+  <div class="mb-3">
+    <label class="form-label">Nombre</label>
+    <input asp-for"Nombre" type="text" class="form-control" >  
+  </div>
+    <div class="mb-3">
+    <label class="form-label">Apellido Paterno</label>
+    <input asp-for"ApellidoPaterno" type="text" class="form-control" >  
+  </div>
+    <div class="mb-3">
+    <label class="form-label">Apellido Materno</label>
+    <input asp-for"ApellidoMaterno" type="text" class="form-control" >  
+  </div>
+    <div class="mb-3">
+    <label class="form-label">UsuerName</label>
+    <input asp-for"UserName" type="text" class="form-control" >  
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
+
+
+  </div>
+</div>

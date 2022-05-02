@@ -1,0 +1,50 @@
+﻿@model List<UsuarioModel>
+@{
+    ViewData["Title"] = "GetAll";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>GetAll</h1>
+
+<div class="card">
+  <div class="card-header">
+    Guardar
+
+
+
+    <table class="table table-dark table-striped">
+        <thead>
+  <tr>
+      <th>Nombre</th>
+      <th>Apellido Paterno</th>
+      <th>Apellido Materno</th>
+      <th>UserName</th>
+
+  </tr>
+  </thead>
+  <tbody>
+      @foreach(var item in Model){
+          <tr>
+              <td>@item.Nombre</td>
+              <td>@item.ApellidoPaterno</td>
+              <td>@item.ApellidoMaterno</td>
+              <td>@item.UserName</td>
+          </tr>
+                                 }
+  </tbody>
+    </table>
+
+
+
+
+
+  </div>
+  <div class="card-body">
+    
+
+ 
+  </div>
+  
+
+
+  </div>
